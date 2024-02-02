@@ -1,0 +1,147 @@
+body {
+    background-image: url("pictures57.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-color: #1c171d;
+    margin: 0;
+    text-align: center;
+}
+#cont-cauntdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    padding: 40px;
+    color: beige;
+    background-color: rgba(22, 22, 22, 0.5);
+}
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 5px 15px;
+}
+.labelOne, .labelTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 15px;
+}
+label {
+        color: beige;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 10px;
+        padding: 3px 15px;
+        background-color: rgba(22, 22, 22, 0.5);
+}
+input {
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+}
+#chooseBtn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button {
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    color: beige;
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: rgba(22, 22, 22, 0.5);
+    align-items: center;
+    margin: 40px 0px 0px 0px;
+    padding: 10px 35px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(22, 22, 22, 0.9);
+}
+p {
+    font-size: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    color: beige;   
+    text-align: center;
+}
+#countdown {
+    padding: 10px 35px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: rgba(22, 22, 22, 0.5);
+    width: 100px;
+    align-items: center;
+}
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+        padding: 30px;
+    }
+    #container {
+    display: fixed;
+    }
+    #cont-cauntdown {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #timer {
+    flex-wrap: wrap;
+    }
+}
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+    #container {
+        display: fixed;
+    }
+    #cont-cauntdown {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #timer {
+    flex-wrap: wrap;
+    }
+}
+@media all and (max-width: 300px) {
+    h1 {
+        font-size: 25px;
+        padding: 20px;
+    }
+    #container {
+        display: fixed;
+    }
+    #cont-cauntdown {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #chooseBtn {
+        flex-direction: column;
+        align-items: center;
+    }
+    #timer {
+    flex-wrap: wrap;
+    }
+}

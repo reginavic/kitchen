@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div id="container">
+        <h1>TIMER FOR COOKING</h1>
+        <div id="cont-cauntdown">
+            <p id="countdown">0 : 00</p>
+        </div>
+        <div id="timer">
+            <div class="labelOne">
+            <label>Minutes</label>
+            <input type="number" class="minutes" placeholder="0" maxlength="4" size="2" min="0" id="minut">
+            </div>
+            <div class="labelTwo">
+            <label>Seconds</label>
+            <input type="number" class="seconds" placeholder="00" maxlength="4" size="2" min="0" id="sec">
+            </div>
+        </div>
+    <div id="chooseBtn">
+    <button id="startButton">Start</button>
+    <button id="pauseButton">Pause</button>
+    <button id="refreshButton">Refresh</button>
+    </div>
+    </div>
+    <audio id="player" autoplay loop>
+        <source src="05434.mp3" type="audio/mp3">
+    </audio>
+    
+    <script src="index.js"></script>
+</body>
+</html>
